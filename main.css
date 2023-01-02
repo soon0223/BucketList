@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
+
+* {
+    font-family: 'Hahmlet', serif;
+}
+
+.bg {
+    width: 360px;
+    margin: 0 auto ;
+    background-image : url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+}
+.txt-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 0;
+
+}
+.txt-box .title {
+    padding: 5px 15px;
+    font-size: 24px;
+    color: #fff;
+    background-color: cadetblue;
+    border-radius: 8px;
+}
+.txt-box .msg{ 
+    color: cadetblue;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+.bucket {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+.img1 {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+    background-size: cover;
+    background-position: center;
+}
+.img2 {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+    background-size: cover;
+    background-position: center;
+}
+.done::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    background-image: url(https://item.kakaocdn.net/do/e27878b2d7c30103f76bfb73833ffaab8f324a0b9c48f77dbce3a43bd11ce785);
+    background-size: cover;
+    transform: translate(-50%, -40%);
+}
